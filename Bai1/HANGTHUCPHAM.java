@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class HANGTHUCPHAM extends HANGHOA {
@@ -65,7 +64,7 @@ public class HANGTHUCPHAM extends HANGHOA {
         System.out.print("Nhap ngay san xuat: ");
         setNSX(sc.nextLine());
         System.out.print("Nhap ngay het han: "); 
-        setNHH(sc.nextLinet());
+        setNHH(sc.nextLin());
         sc.nextLine();
         System.out.print("Nhap chiet khau: ");
         setChietkhau(sc.nextFloat());
