@@ -1,6 +1,11 @@
+
+import java.util.Scanner;
+
 public class HANGTHUCPHAM extends HANGHOA {
     private String nsx, nhh;
     private float chietkhau;
+
+    Scanner sc = new Scanner(System.in);
 
     public HANGDIENMAY(){
         super();
@@ -57,13 +62,13 @@ public class HANGTHUCPHAM extends HANGHOA {
         System.out.print("Nhap gia: ");
         super.setMahang(sc.nextInt());
         sc.nextLine();
-        System.out.print("Nhap thoi gian bao hanh (thang): ");
-        setThoigianbaohanh(sc.nextLine());
-        System.out.print("Nhap khuyen mai: "); 
-        setKhuyenmai(sc.nextFloat());
+        System.out.print("Nhap ngay san xuat: ");
+        setNSX(sc.nextLine());
+        System.out.print("Nhap ngay het han: "); 
+        setNHH(sc.nextLinet());
         sc.nextLine();
-        System.out.print("Nhap cong suat: ");
-        setCongsuat(sc.nextInt());
+        System.out.print("Nhap chiet khau: ");
+        setChietkhau(sc.nextFloat());
         sc.nextLine();
     }
 
@@ -71,10 +76,10 @@ public class HANGTHUCPHAM extends HANGHOA {
         System.out.println("Ma hang: " + getMahang());
         System.out.println("Ten hang: " + getTenhang());
         System.out.println("Gia: " + getGia());
-        System.out.println("Thoi gian bao hanh: " + getThoigianbaohanh() + " Thang");
+        System.out.println("Ngay san xuat: " + getNSX());
 
-        System.out.println("Cong suat: " + getCongsuat()); 
-        System.out.println("Khuyen mai: " + getKhuyenmai()); 
+        System.out.println("Ngay het han: " + getNHH()); 
+        System.out.println("Chiet khau: " + getChietkhau()); 
         System.out.println("Gia ban: " + getGiaban());
     }
 }

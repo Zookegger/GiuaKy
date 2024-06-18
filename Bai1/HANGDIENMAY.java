@@ -7,14 +7,14 @@ public class HANGDIENMAY extends HANGHOA {
 
     Scanner sc = new Scanner(System.in);
 
-    HANGDIENMAY(){
+    public HANGDIENMAY(){
         super();
         setThoigianbaohanh(0);
         setKhuyenmai(0.0f);
         setCongsuat(0);
     }
 
-    HANGDIENMAY(String mahang, String tenhang, int gia, int tgbh, float khuyenmai, int congsuat){
+    public HANGDIENMAY(String mahang, String tenhang, int gia, int tgbh, float khuyenmai, int congsuat){
         super(mahang, tenhang, gia);
         setThoigianbaohanh(tgbh);
         setKhuyenmai(khuyenmai);
@@ -54,7 +54,8 @@ public class HANGDIENMAY extends HANGHOA {
         return ((double)super.gia) + ((double)this.khuyenmai); 
     }
 
-    public void nhap() {
+    public void nhap() { 
+
         System.out.print("Nhap ma hang: ");
         super.setMahang(sc.nextLine());
         System.out.print("Nhap ten hang: ");
@@ -77,7 +78,6 @@ public class HANGDIENMAY extends HANGHOA {
         System.out.println("Ten hang: " + getTenhang());
         System.out.println("Gia: " + getGia());
         System.out.println("Thoi gian bao hanh: " + getThoigianbaohanh() + " Thang");
-
         System.out.println("Cong suat: " + getCongsuat()); 
         System.out.println("Khuyen mai: " + getKhuyenmai());
         System.out.println("Gia ban: " + getGiaban());
